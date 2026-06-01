@@ -1,10 +1,10 @@
 # ./packages/icons
 
-This package contains custom Supabase icons that can be used alongside other icon libraries.
+This package contains custom icons that can be used alongside other icon libraries.
 
 ## Documentation
 
-**For complete documentation, usage examples, and guidelines, see the [Design System](../../apps/design-system/content/docs/icons.mdx)**
+**For complete documentation, usage examples, and guidelines, see the [Enigma Design System](../../apps/enigma/content/docs/icons.mdx)**
 
 ## Quick start
 
@@ -28,4 +28,4 @@ function MyComponent() {
 2. Run `npm run build:icons` in this directory
 3. Import and use your new icon
 
-For detailed instructions, examples, and troubleshooting, see the [Design System](../../apps/design-system/content/docs/icons.mdx).
+For detailed instructions, examples, and troubleshooting, see the [Enigma Design System](../../apps/enigma/content/docs/icons.mdx).

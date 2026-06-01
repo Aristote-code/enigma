@@ -1,4 +1,4 @@
-# Design System
+# Enigma Design System
 
 A React component library and documentation site, built on **shadcn/ui + Radix UI** and **Tailwind CSS v4**, themed with [AlignUI](https://alignui.com) design tokens (Slate neutrals, electric-blue primary, Inter).
 
@@ -15,14 +15,14 @@ pnpm 10 + Turborepo monorepo. Requires Node >= 22.
 | `packages/build-icons`            | CLI tool to generate icon components from SVGs    |
 | `packages/tsconfig`               | Shared TypeScript configs                         |
 | `packages/eslint-config-supabase` | Shared ESLint rules                               |
-| `apps/design-system`              | Documentation site (Next.js + Contentlayer)       |
+| `apps/enigma`                     | Documentation site (Next.js + Contentlayer)       |
 
 ## Commands
 
 ```bash
 pnpm install               # install dependencies
-pnpm dev:design-system     # run the docs dev server (http://localhost:3003)
-pnpm build:design-system   # build the docs site
+pnpm dev:enigma            # run the docs dev server (http://localhost:3003)
+pnpm build:enigma          # build the docs site
 pnpm test:ui               # run ui package tests
 pnpm test:ui-patterns      # run ui-patterns tests
 pnpm typecheck             # typecheck all packages

@@ -1,16 +1,16 @@
 {
-  "name": "design-system",
-  "description": "Design System — React component library built on Radix UI, shadcn/ui, and Tailwind CSS.",
+  "name": "enigma",
+  "description": "Enigma Design System — React component library built on Radix UI, shadcn/ui, and Tailwind CSS.",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "turbo run build",
-    "build:design-system": "turbo run build --filter=design-system",
+    "build:enigma": "turbo run build --filter=enigma",
     "clean": "turbo run clean --parallel && rimraf -G node_modules/{*,.bin,.modules.yaml} .turbo/cache",
     "dev": "turbo run dev --parallel",
-    "dev:design-system": "turbo run dev --filter=design-system --parallel",
+    "dev:enigma": "turbo run dev --filter=enigma --parallel",
     "lint": "turbo run lint",
     "typecheck": "turbo --continue typecheck",
     "test:prettier": "SORT_IMPORTS=false prettier --config prettier.config.mjs --cache --check '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'",
@@ -37,6 +37,7 @@
     "node": ">=22"
   },
   "keywords": [
+    "enigma",
     "design-system",
     "react",
     "tailwindcss",
