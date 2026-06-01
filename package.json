@@ -1,0 +1,48 @@
+{
+  "name": "design-system",
+  "description": "Design System — React component library built on Radix UI, shadcn/ui, and Tailwind CSS.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "turbo run build",
+    "build:design-system": "turbo run build --filter=design-system",
+    "clean": "turbo run clean --parallel && rimraf -G node_modules/{*,.bin,.modules.yaml} .turbo/cache",
+    "dev": "turbo run dev --parallel",
+    "dev:design-system": "turbo run dev --filter=design-system --parallel",
+    "lint": "turbo run lint",
+    "typecheck": "turbo --continue typecheck",
+    "test:prettier": "SORT_IMPORTS=false prettier --config prettier.config.mjs --cache --check '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'",
+    "format": "SORT_IMPORTS=false prettier --config prettier.config.mjs --cache --write '{apps,packages}/**/*.{js,jsx,ts,tsx,css,md,mdx,json}'",
+    "test:ui": "turbo run test --filter=ui",
+    "test:ui-patterns": "turbo run test --filter=ui-patterns"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@types/node": "catalog:",
+    "eslint": "^9.0.0",
+    "jsdom": "^28.1.0",
+    "prettier": "^3.8.0",
+    "rimraf": "^6.0.0",
+    "supports-color": "^8.0.0",
+    "tailwindcss": "catalog:",
+    "tsx": "catalog:",
+    "turbo": "2.9.6",
+    "typescript": "catalog:",
+    "zod": "catalog:"
+  },
+  "engines": {
+    "pnpm": "10.24",
+    "node": ">=22"
+  },
+  "keywords": [
+    "design-system",
+    "react",
+    "tailwindcss",
+    "radix-ui",
+    "shadcn",
+    "components"
+  ],
+  "packageManager": "pnpm@10.24.0"
+}

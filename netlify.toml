@@ -1,0 +1,14 @@
+# Netlify configuration for the Design System docs site (apps/design-system).
+# pnpm + Turborepo monorepo; the Next.js runtime is provided by @netlify/plugin-nextjs.
+
+[build]
+  command = "pnpm build:design-system"
+  publish = "apps/design-system/.next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Serve the docs at the site root (the app defaults to /design-system locally).
+  NEXT_PUBLIC_BASE_PATH = ""
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
