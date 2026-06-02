@@ -48,13 +48,21 @@ export * from './src/components/shadcn/ui/sonner-progress'
 export * from './src/components/shadcn/ui/separator'
 export * from './src/components/shadcn/ui/sheet'
 export * from './src/components/shadcn/ui/badge'
+export * from './src/components/shadcn/ui/banner'
+export * from './src/components/shadcn/ui/tag'
+export * from './src/components/shadcn/ui/statusbadge'
 export * from './src/components/shadcn/ui/input-otp'
+export * from './src/components/shadcn/ui/kbd'
 export * from './src/components/shadcn/ui/alert-dialog'
 export * from './src/components/shadcn/ui/avatar'
+export * from './src/components/shadcn/ui/avatargroup'
+export * from './src/components/shadcn/ui/avatargroupcompact'
+export * from './src/components/shadcn/ui/datepicker'
 export * from './src/components/shadcn/ui/drawer'
 export * from './src/components/shadcn/ui/menubar'
 export * from './src/components/shadcn/ui/navigation-menu'
 export * from './src/components/shadcn/ui/progress'
+export * from './src/components/shadcn/ui/progresscircle'
 export * from './src/components/shadcn/ui/skeleton'
 export * from './src/components/shadcn/ui/slider'
 export * from './src/components/shadcn/ui/textarea'
@@ -88,13 +96,21 @@ export * from './src/components/shadcn/ui/input'
 
 export { Button as Button_Shadcn_ } from './src/components/shadcn/ui/button'
 
+export * from './src/components/shadcn/ui/compactbutton'
+
+export * from './src/components/shadcn/ui/fancybutton'
+
 export * from './src/components/shadcn/ui/button-group'
+
+export * from './src/components/shadcn/ui/linkbutton'
 
 export * from './src/components/shadcn/ui/breadcrumb'
 
 export * from './src/components/shadcn/ui/text-area'
 
 export * from './src/components/shadcn/ui/label'
+
+export * from './src/components/shadcn/ui/hint'
 
 export * from './src/components/shadcn/ui/input-group'
 
@@ -139,6 +155,16 @@ export * from './src/components/TreeView'
 
 export * from './src/components/shadcn/ui/chart'
 export * from './src/components/shadcn/ui/sidebar'
+export * from './src/components/shadcn/ui/rating'
+export * from './src/components/shadcn/ui/digitinput'
+export * from './src/components/shadcn/ui/fileupload'
+export * from './src/components/shadcn/ui/notification'
+export * from './src/components/shadcn/ui/colorpicker'
+export * from './src/components/shadcn/ui/dotstepper'
+export * from './src/components/shadcn/ui/segmentedcontrol'
+export * from './src/components/shadcn/ui/horizontalstepper'
+export * from './src/components/shadcn/ui/verticalstepper'
+export * from './src/components/shadcn/ui/pagination'
 
 // ICONS
 export * from './src/components/StatusIcon'

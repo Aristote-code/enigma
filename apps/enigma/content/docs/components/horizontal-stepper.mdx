@@ -1,0 +1,30 @@
+---
+title: Horizontal Stepper
+description: A horizontal progress indicator that shows a user's position across a sequence of ordered steps.
+component: true
+---
+
+<ComponentPreview name="horizontal-stepper-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { HorizontalStepper } from 'ui'
+```
+
+```tsx
+<HorizontalStepper
+  steps={[{ label: 'Account' }, { label: 'Profile' }, { label: 'Done' }]}
+  currentStep={1}
+/>
+```
+
+Each step is an object with a `label` and an optional `description`. The `currentStep` index (zero-based) determines each step's status: steps before it render as completed, the step at the index is current, and steps after it are upcoming. Pass `onStepClick` to make the steps interactive — it receives the clicked step index.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="horizontal-stepper-variants" peekCode />
+
+Use `size` to switch between `sm` and `md` (default) circle and label sizing. Supplying a `description` on a step renders secondary text beneath its label.

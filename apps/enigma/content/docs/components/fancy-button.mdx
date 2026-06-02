@@ -1,0 +1,44 @@
+---
+title: Fancy Button
+description: A prominent button with a subtle gradient sheen for primary calls to action.
+component: true
+---
+
+<ComponentPreview name="fancy-button-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { FancyButton } from 'ui'
+```
+
+```tsx
+<FancyButton variant="brand">Get started</FancyButton>
+```
+
+To render an icon alongside the label, wrap it in `FancyButtonIcon`.
+
+```tsx
+import { FancyButton, FancyButtonIcon } from 'ui'
+```
+
+```tsx
+<FancyButton variant="neutral">
+  <FancyButtonIcon>
+    <Sparkles />
+  </FancyButtonIcon>
+  Upgrade
+</FancyButton>
+```
+
+Set the `asChild` prop to render a custom element, such as a link, while keeping the button styling.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="fancy-button-variants" peekCode />
+
+Use the `variant` prop to set the visual style: `brand` (default), `neutral`, `destructive`, or `basic`.
+
+Use the `size` prop to control the dimensions: `medium` (default), `small`, or `xsmall`.

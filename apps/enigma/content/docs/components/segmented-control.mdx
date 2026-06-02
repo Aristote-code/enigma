@@ -1,0 +1,34 @@
+---
+title: Segmented Control
+description: A row of mutually exclusive options in a single control, used to switch between related views or modes.
+component: true
+---
+
+<ComponentPreview name="segmented-control-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { SegmentedControl } from 'ui'
+```
+
+```tsx
+<SegmentedControl
+  items={[
+    { value: 'list', label: 'List' },
+    { value: 'board', label: 'Board' },
+  ]}
+  value={value}
+  onValueChange={setValue}
+/>
+```
+
+Pass the options through `items`, where each item is an object with a `value` and a `label`. The control is controlled: provide the currently selected `value` and an `onValueChange` callback that receives the next value. The `label` accepts any React node, so you can render text, icons, or both.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="segmented-control-variants" peekCode />
+
+The `size` prop controls the padding and text size of the control. It accepts `sm` and `md`, defaulting to `md`. Set `disabled` to dim the whole control and prevent interaction.

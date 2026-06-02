@@ -1,0 +1,27 @@
+---
+title: Tag
+description: A compact label for categorizing or filtering content, optionally with an icon or dismiss control.
+component: true
+---
+
+<ComponentPreview name="tag-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Tag } from 'ui'
+```
+
+```tsx
+<Tag variant="stroke" size="md">
+  Production
+</Tag>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="tag-variants" peekCode />
+
+Use `variant` to switch between a `stroke` (bordered, transparent) and `filled` (solid surface) appearance, and `size` for `sm`, `md`, or `lg` heights. Pass an `icon` node to render leading content, supply an `onDismiss` callback to show a remove button, and set `disabled` to mute the Tag and disable interaction.

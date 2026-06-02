@@ -1,0 +1,30 @@
+---
+title: File Upload
+description: A drag-and-drop drop zone for selecting files, with a removable list of the chosen files.
+component: true
+---
+
+<ComponentPreview name="file-upload-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { FileUpload } from 'ui'
+```
+
+```tsx
+<FileUpload
+  accept="image/*,.pdf"
+  maxSize={5 * 1024 * 1024}
+  multiple
+  onFilesChange={(files) => console.log(files)}
+/>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="file-upload-variants" peekCode />
+
+Set `variant` to `default` or `error` to control the drop zone's color treatment, and pass `disabled` to make the zone non-interactive. Use `accept` to restrict file types, `maxSize` (in bytes) to enforce a size limit, and `multiple` to allow more than one file. `onFilesChange` is called with the current array of `File` objects whenever the selection changes.

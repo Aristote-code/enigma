@@ -1,0 +1,28 @@
+---
+title: Notification
+description: A dismissible status message with optional icon, title, description, timestamp, and actions.
+component: true
+---
+
+<ComponentPreview name="notification-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Notification } from 'ui'
+```
+
+```tsx
+<Notification variant="info" icon={<Info />} onDismiss={() => {}}>
+  <NotificationTitle>New version available</NotificationTitle>
+  <NotificationDescription>A new version is ready to install.</NotificationDescription>
+</Notification>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="notification-variants" peekCode />
+
+The `variant` prop tints the leading icon and supports `info` (default), `success`, `warning`, `error`, and `neutral`. Pass an `icon` to render a leading glyph, and provide `onDismiss` to show a close button. Compose the body with `NotificationTitle`, `NotificationDescription`, `NotificationTimestamp`, and `NotificationActions`.

@@ -1,0 +1,25 @@
+---
+title: Dot Stepper
+description: A compact row of dots that indicates progress through a fixed number of steps.
+component: true
+---
+
+<ComponentPreview name="dot-stepper-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { DotStepper } from 'ui'
+```
+
+```tsx
+<DotStepper totalSteps={4} currentStep={1} onStepClick={setStep} />
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="dot-stepper-variants" peekCode />
+
+Use `size` to control the dot scale and spacing. It accepts `sm`, `md` (default), and `lg`. Pass `totalSteps` and the zero-based `currentStep` to render progress; supplying `onStepClick` makes each dot an interactive button that reports the clicked step index.

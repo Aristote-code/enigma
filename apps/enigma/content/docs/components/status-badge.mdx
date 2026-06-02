@@ -1,0 +1,25 @@
+---
+title: Status Badge
+description: A pill-shaped badge with a colored status dot for surfacing presence or state.
+component: true
+---
+
+<ComponentPreview name="status-badge-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { StatusBadge } from 'ui'
+```
+
+```tsx
+<StatusBadge variant="online">Online</StatusBadge>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="status-badge-variants" peekCode />
+
+The `variant` prop controls the dot color: `online`, `offline`, `away`, `busy`, and `neutral` (the default). The `size` prop accepts `sm` and `md` (the default). The badge label is passed as `children`, and any other `div` attributes are forwarded to the root element.

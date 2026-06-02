@@ -1,0 +1,27 @@
+---
+title: Datepicker
+description: A single-date picker that composes a Popover and Calendar behind a button trigger.
+component: true
+---
+
+<ComponentPreview name="datepicker-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Datepicker } from 'ui'
+```
+
+```tsx
+<Datepicker value={date} onChange={setDate} />
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="datepicker-variants" peekCode />
+
+The `Datepicker` is controlled via `value` and `onChange`. Use `placeholder` to set
+the empty-state label, `formatLabel` to customize how the selected date is rendered,
+and `disabled` to deactivate the trigger.

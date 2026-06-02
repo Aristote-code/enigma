@@ -1,0 +1,27 @@
+---
+title: Hint
+description: A small, inline helper line of text — optionally with a leading icon — for guidance or validation feedback beneath form fields.
+component: true
+---
+
+<ComponentPreview name="hint-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Hint } from 'ui'
+```
+
+```tsx
+<Hint variant="default" icon={<Info />}>
+  Your password must be at least 8 characters long.
+</Hint>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="hint-variants" peekCode />
+
+Use the `variant` prop to convey tone: `default` for neutral guidance, `success`, `warning`, and `error` for validation feedback. Pass an optional `icon` to render a leading glyph, and set `disabled` to mute the hint.

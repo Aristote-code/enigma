@@ -537,6 +537,111 @@ export const docsConfig: DocsConfig = {
           href: '/docs/components/keyboard-shortcut',
           items: [],
         },
+        {
+          title: 'Compact Button',
+          href: '/docs/components/compact-button',
+          items: [],
+        },
+        {
+          title: 'Fancy Button',
+          href: '/docs/components/fancy-button',
+          items: [],
+        },
+        {
+          title: 'Link Button',
+          href: '/docs/components/link-button',
+          items: [],
+        },
+        {
+          title: 'Avatar Group',
+          href: '/docs/components/avatar-group',
+          items: [],
+        },
+        {
+          title: 'Avatar Group Compact',
+          href: '/docs/components/avatar-group-compact',
+          items: [],
+        },
+        {
+          title: 'Banner',
+          href: '/docs/components/banner',
+          items: [],
+        },
+        {
+          title: 'Kbd',
+          href: '/docs/components/kbd',
+          items: [],
+        },
+        {
+          title: 'Progress Circle',
+          href: '/docs/components/progress-circle',
+          items: [],
+        },
+        {
+          title: 'Rating',
+          href: '/docs/components/rating',
+          items: [],
+        },
+        {
+          title: 'Status Badge',
+          href: '/docs/components/status-badge',
+          items: [],
+        },
+        {
+          title: 'Tag',
+          href: '/docs/components/tag',
+          items: [],
+        },
+        {
+          title: 'Notification',
+          href: '/docs/components/notification',
+          items: [],
+        },
+        {
+          title: 'Color Picker',
+          href: '/docs/components/color-picker',
+          items: [],
+        },
+        {
+          title: 'Datepicker',
+          href: '/docs/components/datepicker',
+          items: [],
+        },
+        {
+          title: 'Digit Input',
+          href: '/docs/components/digit-input',
+          items: [],
+        },
+        {
+          title: 'File Upload',
+          href: '/docs/components/file-upload',
+          items: [],
+        },
+        {
+          title: 'Hint',
+          href: '/docs/components/hint',
+          items: [],
+        },
+        {
+          title: 'Segmented Control',
+          href: '/docs/components/segmented-control',
+          items: [],
+        },
+        {
+          title: 'Dot Stepper',
+          href: '/docs/components/dot-stepper',
+          items: [],
+        },
+        {
+          title: 'Horizontal Stepper',
+          href: '/docs/components/horizontal-stepper',
+          items: [],
+        },
+        {
+          title: 'Vertical Stepper',
+          href: '/docs/components/vertical-stepper',
+          items: [],
+        },
       ],
     },
   ],

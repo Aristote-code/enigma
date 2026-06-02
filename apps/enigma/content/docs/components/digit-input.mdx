@@ -1,0 +1,25 @@
+---
+title: Digit Input
+description: A segmented input for entering numeric codes such as one-time passwords, with auto-advance, paste, and keyboard navigation.
+component: true
+---
+
+<ComponentPreview name="digit-input-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { DigitInput } from 'ui'
+```
+
+```tsx
+<DigitInput length={6} value={value} onChange={setValue} />
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="digit-input-variants" peekCode />
+
+Use `gap` to control the spacing between boxes (`tight`, `default`, or `loose`), and `length` to set the number of digits. Set `isError` to apply error styling to every box, and `disabled` to make the input non-interactive.

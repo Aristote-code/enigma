@@ -1,0 +1,25 @@
+---
+title: Rating
+description: A star rating control for capturing or displaying a score, with support for half values.
+component: true
+---
+
+<ComponentPreview name="rating-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Rating } from 'ui'
+```
+
+```tsx
+<Rating value={3} onChange={setValue} />
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="rating-variants" peekCode />
+
+Use the `size` prop to render the stars at `sm`, `md` (default), or `lg`. The `value` prop accepts half values such as `3.5`, and `readOnly` makes the rating display-only. Set `max` to change the number of stars (defaults to `5`).

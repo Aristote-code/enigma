@@ -1797,4 +1797,224 @@ export const examples: Registry = [
     type: 'components:example',
     files: ['example/status-code-demo.tsx'],
   },
+  {
+    name: 'compact-button-demo',
+    type: 'components:example',
+    files: ['example/compact-button-demo.tsx'],
+  },
+  {
+    name: 'compact-button-variants',
+    type: 'components:example',
+    files: ['example/compact-button-variants.tsx'],
+  },
+  {
+    name: 'fancy-button-demo',
+    type: 'components:example',
+    files: ['example/fancy-button-demo.tsx'],
+  },
+  {
+    name: 'fancy-button-variants',
+    type: 'components:example',
+    files: ['example/fancy-button-variants.tsx'],
+  },
+  {
+    name: 'link-button-demo',
+    type: 'components:example',
+    files: ['example/link-button-demo.tsx'],
+  },
+  {
+    name: 'link-button-variants',
+    type: 'components:example',
+    files: ['example/link-button-variants.tsx'],
+  },
+  {
+    name: 'avatar-group-demo',
+    type: 'components:example',
+    files: ['example/avatar-group-demo.tsx'],
+  },
+  {
+    name: 'avatar-group-variants',
+    type: 'components:example',
+    files: ['example/avatar-group-variants.tsx'],
+  },
+  {
+    name: 'avatar-group-compact-demo',
+    type: 'components:example',
+    files: ['example/avatar-group-compact-demo.tsx'],
+  },
+  {
+    name: 'avatar-group-compact-variants',
+    type: 'components:example',
+    files: ['example/avatar-group-compact-variants.tsx'],
+  },
+  {
+    name: 'banner-demo',
+    type: 'components:example',
+    files: ['example/banner-demo.tsx'],
+  },
+  {
+    name: 'banner-variants',
+    type: 'components:example',
+    files: ['example/banner-variants.tsx'],
+  },
+  {
+    name: 'kbd-demo',
+    type: 'components:example',
+    files: ['example/kbd-demo.tsx'],
+  },
+  {
+    name: 'kbd-variants',
+    type: 'components:example',
+    files: ['example/kbd-variants.tsx'],
+  },
+  {
+    name: 'progress-circle-demo',
+    type: 'components:example',
+    files: ['example/progress-circle-demo.tsx'],
+  },
+  {
+    name: 'progress-circle-variants',
+    type: 'components:example',
+    files: ['example/progress-circle-variants.tsx'],
+  },
+  {
+    name: 'rating-demo',
+    type: 'components:example',
+    files: ['example/rating-demo.tsx'],
+  },
+  {
+    name: 'rating-variants',
+    type: 'components:example',
+    files: ['example/rating-variants.tsx'],
+  },
+  {
+    name: 'status-badge-demo',
+    type: 'components:example',
+    files: ['example/status-badge-demo.tsx'],
+  },
+  {
+    name: 'status-badge-variants',
+    type: 'components:example',
+    files: ['example/status-badge-variants.tsx'],
+  },
+  {
+    name: 'tag-demo',
+    type: 'components:example',
+    files: ['example/tag-demo.tsx'],
+  },
+  {
+    name: 'tag-variants',
+    type: 'components:example',
+    files: ['example/tag-variants.tsx'],
+  },
+  {
+    name: 'notification-demo',
+    type: 'components:example',
+    files: ['example/notification-demo.tsx'],
+  },
+  {
+    name: 'notification-variants',
+    type: 'components:example',
+    files: ['example/notification-variants.tsx'],
+  },
+  {
+    name: 'color-picker-demo',
+    type: 'components:example',
+    files: ['example/color-picker-demo.tsx'],
+  },
+  {
+    name: 'color-picker-variants',
+    type: 'components:example',
+    files: ['example/color-picker-variants.tsx'],
+  },
+  {
+    name: 'datepicker-demo',
+    type: 'components:example',
+    files: ['example/datepicker-demo.tsx'],
+  },
+  {
+    name: 'datepicker-variants',
+    type: 'components:example',
+    files: ['example/datepicker-variants.tsx'],
+  },
+  {
+    name: 'digit-input-demo',
+    type: 'components:example',
+    files: ['example/digit-input-demo.tsx'],
+  },
+  {
+    name: 'digit-input-variants',
+    type: 'components:example',
+    files: ['example/digit-input-variants.tsx'],
+  },
+  {
+    name: 'file-upload-demo',
+    type: 'components:example',
+    files: ['example/file-upload-demo.tsx'],
+  },
+  {
+    name: 'file-upload-variants',
+    type: 'components:example',
+    files: ['example/file-upload-variants.tsx'],
+  },
+  {
+    name: 'hint-demo',
+    type: 'components:example',
+    files: ['example/hint-demo.tsx'],
+  },
+  {
+    name: 'hint-variants',
+    type: 'components:example',
+    files: ['example/hint-variants.tsx'],
+  },
+  {
+    name: 'segmented-control-demo',
+    type: 'components:example',
+    files: ['example/segmented-control-demo.tsx'],
+  },
+  {
+    name: 'segmented-control-variants',
+    type: 'components:example',
+    files: ['example/segmented-control-variants.tsx'],
+  },
+  {
+    name: 'dot-stepper-demo',
+    type: 'components:example',
+    files: ['example/dot-stepper-demo.tsx'],
+  },
+  {
+    name: 'dot-stepper-variants',
+    type: 'components:example',
+    files: ['example/dot-stepper-variants.tsx'],
+  },
+  {
+    name: 'horizontal-stepper-demo',
+    type: 'components:example',
+    files: ['example/horizontal-stepper-demo.tsx'],
+  },
+  {
+    name: 'horizontal-stepper-variants',
+    type: 'components:example',
+    files: ['example/horizontal-stepper-variants.tsx'],
+  },
+  {
+    name: 'vertical-stepper-demo',
+    type: 'components:example',
+    files: ['example/vertical-stepper-demo.tsx'],
+  },
+  {
+    name: 'vertical-stepper-variants',
+    type: 'components:example',
+    files: ['example/vertical-stepper-variants.tsx'],
+  },
+  {
+    name: 'pagination-demo',
+    type: 'components:example',
+    files: ['example/pagination-demo.tsx'],
+  },
+  {
+    name: 'pagination-variants',
+    type: 'components:example',
+    files: ['example/pagination-variants.tsx'],
+  },
 ]

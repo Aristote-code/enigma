@@ -1,0 +1,27 @@
+---
+title: Banner
+description: A full-width, dismissible message bar for surfacing contextual information, warnings, or status across a page.
+component: true
+---
+
+<ComponentPreview name="banner-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Banner } from 'ui'
+```
+
+```tsx
+<Banner variant="info" icon={<Info />} onDismiss={() => {}}>
+  A new version of the design system is available.
+</Banner>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="banner-variants" peekCode />
+
+Set `variant` to control the color treatment: `info` (default), `success`, `warning`, or `error`. Pass an `icon` to prefix the message, an `action` node for a trailing control, and an `onDismiss` callback to render a close button.

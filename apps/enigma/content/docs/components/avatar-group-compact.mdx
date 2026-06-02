@@ -1,0 +1,35 @@
+---
+title: Avatar Group Compact
+description: A condensed avatar stack inside a pill with a trailing +N count, suited to tight spaces.
+component: true
+---
+
+<ComponentPreview name="avatar-group-compact-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Avatar, AvatarFallback, AvatarGroupCompact, AvatarImage } from 'ui'
+```
+
+```tsx
+<AvatarGroupCompact max={3}>
+  <Avatar className="h-6 w-6">
+    <AvatarImage src="https://github.com/mildtomato.png" alt="@mildtomato" />
+    <AvatarFallback className="text-[10px]">MT</AvatarFallback>
+  </Avatar>
+  <Avatar className="h-6 w-6">
+    <AvatarFallback className="text-[10px]">SC</AvatarFallback>
+  </Avatar>
+</AvatarGroupCompact>
+```
+
+Wrap any number of `Avatar` children in `AvatarGroupCompact`. The avatars are overlapped inside a rounded pill and each is given a ring so it reads cleanly against the ones behind it. Set `max` to cap how many avatars render before a trailing `+N` count summarizes the remainder; it defaults to `3`. The component leaves avatar sizing to you, so pass a `className` such as `h-6 w-6` to keep them compact.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="avatar-group-compact-variants" peekCode />
+
+The `size` prop controls the pill padding, the overlap spacing, and the size of the `+N` count text. It accepts `sm`, `md`, and `lg`, defaulting to `md`.

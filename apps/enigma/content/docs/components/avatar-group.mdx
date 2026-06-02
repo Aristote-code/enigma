@@ -1,0 +1,35 @@
+---
+title: Avatar Group
+description: A stack of overlapping avatars with an optional +N indicator for overflow.
+component: true
+---
+
+<ComponentPreview name="avatar-group-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { Avatar, AvatarFallback, AvatarGroup, AvatarImage } from 'ui'
+```
+
+```tsx
+<AvatarGroup max={4}>
+  <Avatar>
+    <AvatarImage src="https://github.com/mildtomato.png" alt="@mildtomato" />
+    <AvatarFallback>MT</AvatarFallback>
+  </Avatar>
+  <Avatar>
+    <AvatarFallback>SC</AvatarFallback>
+  </Avatar>
+</AvatarGroup>
+```
+
+Wrap any number of `Avatar` children in `AvatarGroup`. Each avatar is overlapped and given a ring so it reads cleanly against the ones behind it. Set `max` to cap how many avatars render before a `+N` indicator summarizes the remainder.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="avatar-group-variants" peekCode />
+
+The `size` prop controls both the overlap spacing and the size of the overflow indicator. It accepts `sm`, `md`, and `lg`, defaulting to `md`.

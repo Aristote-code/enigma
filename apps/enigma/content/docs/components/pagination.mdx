@@ -1,104 +1,27 @@
 ---
 title: Pagination
-description: Pagination with page navigation, next and previous links.
+description: Navigate through paged content with previous/next controls and numbered page links.
 component: true
-source:
-  shadcn: true
 ---
 
 <ComponentPreview name="pagination-demo" peekCode wide />
 
-## Installation
-
-<Tabs defaultValue="cli">
-
-<TabsList>
-  <TabsTrigger value="cli">CLI</TabsTrigger>
-  <TabsTrigger value="manual">Manual</TabsTrigger>
-</TabsList>
-<TabsContent value="cli">
-
-```bash
-npx shadcn-ui@latest add pagination
-```
-
-</TabsContent>
-
-<TabsContent value="manual">
-
-<Steps>
-
-<Step>Copy and paste the following code into your project.</Step>
-
-<ComponentSource name="pagination" />
-
-<Step>Update the import paths to match your project setup.</Step>
-
-</Steps>
-
-</TabsContent>
-
-</Tabs>
-
 ## Usage
 
 ```tsx
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from '@/components/ui/pagination'
+import { Pagination } from 'ui'
 ```
 
 ```tsx
-<Pagination>
-  <PaginationContent>
-    <PaginationItem>
-      <PaginationPrevious href="#" />
-    </PaginationItem>
-    <PaginationItem>
-      <PaginationLink href="#">1</PaginationLink>
-    </PaginationItem>
-    <PaginationItem>
-      <PaginationEllipsis />
-    </PaginationItem>
-    <PaginationItem>
-      <PaginationNext href="#" />
-    </PaginationItem>
-  </PaginationContent>
-</Pagination>
+<Pagination currentPage={currentPage} totalPages={10} onPageChange={setCurrentPage} />
 ```
 
-### Next.js
+The component is controlled: pass the 1-indexed `currentPage` and `totalPages`, and update your state in the `onPageChange` callback. Use `siblingCount` (default `1`) to control how many page numbers appear on each side of the current page before ellipses are shown.
 
-By default the `<PaginationLink />` component will render an `<a />` tag.
+## Examples
 
-To use the Next.js `<Link />` component, make the following updates to `pagination.tsx`.
+### Variants
 
-```diff showLineNumbers /typeof Link/ {1}
-+ import Link from "next/link"
+<ComponentPreview name="pagination-variants" peekCode />
 
-- type PaginationLinkProps = ... & React.ComponentProps<"a">
-+ type PaginationLinkProps = ... & React.ComponentProps<typeof Link>
-
-const PaginationLink = ({...props }: ) => (
-  <PaginationItem>
--   <a>
-+   <Link>
-      // ...
--   </a>
-+   </Link>
-  </PaginationItem>
-)
-
-```
-
-<Callout className="mt-6">
-
-**Note:** We are making updates to the cli to automatically do this for you.
-
-</Callout>
+Use the `size` prop to scale the controls. It accepts `sm`, `md` (default), and `lg`.

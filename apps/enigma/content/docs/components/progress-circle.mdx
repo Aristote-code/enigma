@@ -1,0 +1,25 @@
+---
+title: Progress Circle
+description: A circular progress indicator that displays a completion value from 0 to 100.
+component: true
+---
+
+<ComponentPreview name="progress-circle-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { ProgressCircle } from 'ui'
+```
+
+```tsx
+<ProgressCircle value={66} size="lg" color="brand" />
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="progress-circle-variants" peekCode />
+
+Use the `size` prop (`xs`, `sm`, `md`, `lg`) to control the diameter, and the `color` prop (`brand`, `success`, `warning`, `destructive`) to set the progress stroke color. The `value` prop accepts a number from 0 to 100 and is clamped to that range.

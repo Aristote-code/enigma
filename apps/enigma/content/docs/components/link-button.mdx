@@ -1,0 +1,29 @@
+---
+title: Link Button
+description: A text-style button that looks like a link, with color variants, sizes, and an optional underline.
+component: true
+---
+
+<ComponentPreview name="link-button-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { LinkButton } from 'ui'
+```
+
+```tsx
+<LinkButton variant="primary">View docs</LinkButton>
+```
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="link-button-variants" peekCode />
+
+Use `variant` to set the color treatment: `gray` (default), `black`, `primary`, or `destructive`.
+
+Set `size` to `medium` (default) or `small` to match surrounding text.
+
+Pass `underline` to keep the underline visible at rest, and use `disabled` to render the button as non-interactive.

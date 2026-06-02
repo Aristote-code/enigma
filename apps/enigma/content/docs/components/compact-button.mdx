@@ -1,0 +1,31 @@
+---
+title: Compact Button
+description: A small, icon-only button for dense or secondary actions.
+component: true
+---
+
+<ComponentPreview name="compact-button-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { CompactButton } from 'ui'
+```
+
+```tsx
+<CompactButton aria-label="Dismiss">
+  <X size={14} strokeWidth={2} />
+</CompactButton>
+```
+
+Compact Button renders a fixed-size square button intended to hold a single icon. Always provide an `aria-label` since there is no visible text. Use the `asChild` prop to render the styles on a custom element, such as a link.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="compact-button-variants" peekCode />
+
+Use `variant` to set the emphasis: `stroke` (default) draws a bordered button, `ghost` is transparent until hovered, and `filled` sits on a subtle surface fill.
+
+Set `size` to `sm`, `md` (default), or `lg` to match the surrounding density. Add `fullRadius` to render a fully rounded, pill-shaped button.

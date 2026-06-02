@@ -1,0 +1,27 @@
+---
+title: Color Picker
+description: A hex color input with a preview swatch and an optional preset palette.
+component: true
+---
+
+<ComponentPreview name="color-picker-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { ColorPicker } from 'ui'
+```
+
+```tsx
+<ColorPicker value={color} onChange={setColor} presets={presets} />
+```
+
+Color Picker is controlled: pass the current hex string to `value` and update it from the `onChange` callback, which fires with a normalized lowercase hex (shorthand like `#abc` is expanded to `#aabbcc`). Pass an array of hex strings to `presets` to render a selectable palette, and set `disabled` to make the picker non-interactive.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="color-picker-variants" peekCode />
+
+Set `size` to `sm`, `md` (default), or `lg` to adjust the spacing between the swatch input and the preset palette.

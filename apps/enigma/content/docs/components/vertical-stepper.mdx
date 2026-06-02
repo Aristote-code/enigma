@@ -1,0 +1,35 @@
+---
+title: Vertical Stepper
+description: A vertical progress indicator that walks users through a sequence of steps, marking each as completed, current, or upcoming.
+component: true
+---
+
+<ComponentPreview name="vertical-stepper-demo" peekCode wide />
+
+## Usage
+
+```tsx
+import { VerticalStepper } from 'ui'
+```
+
+```tsx
+<VerticalStepper
+  currentStep={1}
+  steps={[
+    { label: 'Create project', description: 'Choose a name and region.' },
+    { label: 'Set up database', description: 'Define your schema.' },
+    { label: 'Deploy', description: 'Ship to production.' },
+  ]}
+  onStepClick={(index) => setCurrentStep(index)}
+/>
+```
+
+Pass an array of `steps`, where each step has a `label` and an optional `description`. The zero-based `currentStep` index determines status: steps before it render as completed with a check, the matching step is current, and the rest are upcoming. Provide `onStepClick` to make the step indicators interactive; it receives the clicked step's index. A step may also carry `content`, which is rendered beneath its description only while that step is current.
+
+## Examples
+
+### Variants
+
+<ComponentPreview name="vertical-stepper-variants" peekCode />
+
+The `size` prop controls the step circle dimensions and label spacing. It accepts `sm` and `md`, defaulting to `md`.
