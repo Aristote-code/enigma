@@ -1,0 +1,20 @@
+# Root Netlify config. `base` is pinned to the Enigma app so Netlify's monorepo
+# base resolution is deterministic (it otherwise flip-flops between repo root and
+# the package dir with --filter). With base = apps/enigma:
+#   - the build command runs inside apps/enigma (its own `build` script)
+#   - publish ".next" resolves to apps/enigma/.next
+#   - pnpm still installs the whole workspace from the repo root above.
+# The Next.js runtime is provided by @netlify/plugin-nextjs.
+
+[build]
+  base = "apps/enigma"
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  # Serve the docs at the site root (the app defaults to /enigma locally).
+  NEXT_PUBLIC_BASE_PATH = ""
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
